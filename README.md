@@ -620,12 +620,6 @@ scripts/                  # deploy-managed-agent.sh · validate.py · orchestrat
   <img src="docs/assets/testimonial.png" alt="用户评价" width="800">
 </p>
 
-## 致谢
-
-- **[Anthropic](https://www.anthropic.com/)** — 提供 `claude-for-legal` 开源插件框架和 Claude 模型能力，为中国法本地化改造奠定了坚实基础
-- **[DeepSeek-V4](https://www.deepseek.com/)** — 提供优惠算力支持，使大规模法律技能文件的本地化改造在经济上可行
-- **[浙江海泰律师事务所](https://www.hightac.com/)** — 提供专业成长环境和实务土壤，本版本中融入的合同审查方法论、诉讼分析框架和风险评价体系均源于海泰的长期培养
-
 ---
 
 <p align="center">
