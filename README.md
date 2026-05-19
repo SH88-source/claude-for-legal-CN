@@ -24,16 +24,16 @@
 ## 在 Claude Code 中安装
 
 ```bash
-# 添加市场源（使用本仓库的绝对路径或 GitHub URL）
-/plugin marketplace add <path-to-this-repo>
+# 添加市场源
+/plugin marketplace add https://github.com/SH88-source/claude-for-legal-CN
 
 # 安装你需要的插件
-/plugin install commercial-legal@claude-for-legal-zh
-/plugin install privacy-legal@claude-for-legal-zh
-/plugin install corporate-legal@claude-for-legal-zh
+/plugin install commercial-legal@claude-for-legal-cn
+/plugin install privacy-legal@claude-for-legal-cn
+/plugin install corporate-legal@claude-for-legal-cn
 
 # 重启 Claude Code，然后为每个已安装插件运行初始化设置。
-# 设置过程将你的实践画像写入 ~/.claude/plugins/config/claude-for-legal-zh/<插件名>/CLAUDE.md
+# 设置过程将你的实践画像写入 ~/.claude/plugins/config/claude-for-legal-cn/<插件名>/CLAUDE.md
 /commercial-legal:cold-start-interview
 /privacy-legal:cold-start-interview
 /corporate-legal:cold-start-interview
@@ -286,7 +286,7 @@ scripts/                  # deploy-managed-agent.sh · validate.py · orchestrat
 | **插件** | 自包含的业务领域套件——技能、Agent、钩子和实践画像模板。按需安装。 | `<插件名>/` |
 | **技能** | 领域专业知识、惯例和分步方法论，Claude 在相关时自动调用——也可以通过斜杠命令显式触发：`/commercial-legal:review`、`/privacy-legal:dsar-response`、`/litigation-legal:claim-chart`。 | `<插件名>/skills/<技能名>/SKILL.md` |
 | **Agent** | 定时或事件驱动的工作流（续签监控、案件进度监控、法规变化监控）。在后台运行，推送到渠道或写入文件。 | `<插件名>/agents/` |
-| **实践画像** | 描述你的审查指引、升级规则和内部风格的纯文本 `CLAUDE.md`。所有技能从中读取。 | `~/.claude/plugins/config/claude-for-legal-zh/<插件名>/CLAUDE.md` |
+| **实践画像** | 描述你的审查指引、升级规则和内部风格的纯文本 `CLAUDE.md`。所有技能从中读取。 | `~/.claude/plugins/config/claude-for-legal-cn/<插件名>/CLAUDE.md` |
 | **连接器** | 将 Claude 与你的数据系统连接的 [MCP 服务器](https://modelcontextprotocol.io/)——合同管理、文档管理、电子取证、检索平台、生产力工具。 | `.mcp.json`（每个插件） |
 | **托管 Agent 蓝图** | `agent.yaml` + 一级子 Agent + steering 示例，用于无头部署。 | `managed-agent-cookbooks/<slug>/` |
 
@@ -383,7 +383,7 @@ scripts/                  # deploy-managed-agent.sh · validate.py · orchestrat
 这些是参考模板。当它们与你团队的工作方式对齐时会发挥更大作用——定制机制就是插件本身。
 
 - **运行冷启动面试。** 它**就是**定制机制。它会询问你的实务方式、读取你的种子文件、写入你的实践画像。所有其他技能从中读取。一次 `/commercial-legal:cold-start-interview`，附上五份已签署的主合同、你的审查指引和升级矩阵，审查技能将显著更精准。
-- **编辑实践画像。** 你的画像位于 `~/.claude/plugins/config/claude-for-legal-zh/<插件名>/CLAUDE.md`。直接编辑以修正小问题——错误的升级阈值、新的集成、政策更新。它在插件更新后保留。
+- **编辑实践画像。** 你的画像位于 `~/.claude/plugins/config/claude-for-legal-cn/<插件名>/CLAUDE.md`。直接编辑以修正小问题——错误的升级阈值、新的集成、政策更新。它在插件更新后保留。
 - **重新运行设置。** 当实务发生重大变化时（新业务领域、新系统、新政策），再次运行 `/<插件名>:cold-start-interview`。
 - **更换连接器。** 将 `.mcp.json` 指向你的合同管理系统、文档管理系统、电子取证平台、上线追踪器、HR 系统。连接器未配置时技能优雅降级——不会静默空转。
 - **带入你的审查指引和模板。** 将你的术语、内部风格和品牌模板放入插件的 `CLAUDE.md` 和 `references/`。技能会自动拾取。
@@ -614,7 +614,7 @@ scripts/                  # deploy-managed-agent.sh · validate.py · orchestrat
 
 **SH**，本仓库维护者。
 
-本中国法适配版本基于 [CSlawyer1985/claude-for-legal-ZH](https://github.com/CSlawyer1985/claude-for-legal-ZH) Fork，在原版基础上进行维护与迭代。
+本仓库基于 [anthropics/claude-for-legal](https://github.com/anthropics/claude-for-legal) 的中国法适配版本，依据 Apache 2.0 许可证使用。
 
 <p align="center">
   <img src="docs/assets/testimonial.png" alt="用户评价" width="800">

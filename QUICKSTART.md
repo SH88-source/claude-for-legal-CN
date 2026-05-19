@@ -6,13 +6,17 @@
 
 1. **打开 Claude Code**（在终端中）。
 
-2. **添加市场源。** 在 Claude Code 中输入 `/plugin marketplace add `（末尾带空格），然后**将 `claude-for-legal-zh` 文件夹拖到终端窗口**——路径会自动填入。按回车。
+2. **添加市场源。** 在 Claude Code 中运行：
 
-   （或者输入完整路径：`/plugin marketplace add /Users/你/Desktop/claude-for-legal-zh`）
+   ```
+   /plugin marketplace add https://github.com/SH88-source/claude-for-legal-CN
+   ```
+
+   如已将仓库克隆到本地，也可拖拽文件夹到终端窗口填入路径：`/plugin marketplace add /你的路径/claude-for-legal-CN`
 
 3. **安装你需要的插件。** 从下表中选择匹配你工作领域的插件，然后：
    ```
-   /plugin install commercial-legal@claude-for-legal-zh
+   /plugin install commercial-legal@claude-for-legal-cn
    ```
 
 4. **⚠️ 重启 Claude Code。** 关闭并重新打开。此步骤不可跳过——重启后插件才会生效。
@@ -34,7 +38,7 @@
 
 项目级看似更安全，但会阻止插件读取项目文件夹之外的文件——你放在下载目录的合同、文档里的协议、桌面上的客户材料都无法访问。大多数技能需要读取你的文件。用户级不会给插件额外的文件访问权限——插件仍只能读取你明确指定或当前目录中的文件，只是让你在任何文件夹都能使用插件。
 
-如果已安装为项目级想切换：`/plugin uninstall <插件名>`，然后从用户主目录执行 `/plugin install <插件名>@claude-for-legal-zh`。
+如果已安装为项目级想切换：`/plugin uninstall <插件名>`，然后从用户主目录执行 `/plugin install <插件名>@claude-for-legal-cn`。
 
 ## 我应该安装哪个插件？
 
@@ -55,7 +59,7 @@
 
 ## 你安装的是什么
 
-每个插件通过初始化面试了解你的实务方式，写入实践画像文件（`~/.claude/plugins/config/claude-for-legal-zh/<插件名>/CLAUDE.md`），每个技能都从中读取。画像属于你——直接编辑、重新运行设置、或让技能更新它。
+每个插件通过初始化面试了解你的实务方式，写入实践画像文件（`~/.claude/plugins/config/claude-for-legal-cn/<插件名>/CLAUDE.md`），每个技能都从中读取。画像属于你——直接编辑、重新运行设置、或让技能更新它。
 
 **所有输出均为律师审查草稿。** 插件会标记其不确定的内容，按来源标注引用，并对不可逆操作设置门槛。律师审查、核实并承担责任。插件让审查更快，但不能替代审查。
 
