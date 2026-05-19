@@ -15,9 +15,6 @@
 
 > **新用户？** 从 [QUICKSTART.md](QUICKSTART.md) 开始——60 秒完成安装。本文是完整参考手册。
 
-<p align="center">
-  <img src="docs/assets/hero.png" alt="Claude for Legal 中国法版本 — 着陆页 Hero" width="800">
-</p>
 
 本仓库所有内容可通过**两种方式**使用：安装为 [Claude Code](https://claude.com/product/claude-code) 插件，或通过 [Claude Managed Agents API](https://docs.claude.com/en/api/managed-agents) 部署在你自己的工作流引擎后台。同一套 system prompt，同一套技能——你选择在哪里运行。
 
@@ -81,12 +78,6 @@
 | **时效验证流程** | 引用具体法条、司法解释、诉讼时效时强制独立检索验证 |
 | **知识库路由** | 优先源（理解与适用/类案指南/最高院审判实务）→扩展源→效力警示源，按权威分级检索 |
 
-<p align="center">
-  <img src="docs/assets/method-1.png" alt="方法论 — 步骤 1" width="400">
-  <img src="docs/assets/method-2.png" alt="方法论 — 步骤 2" width="400">
-  <img src="docs/assets/method-3.png" alt="方法论 — 步骤 3" width="400">
-  <img src="docs/assets/method-4.png" alt="方法论 — 步骤 4" width="400">
-</p>
 
 ### 知识库集成
 
@@ -126,9 +117,6 @@
 - **MCP 连接器**——覆盖通用生产力工具（飞书、Google Drive）和法律专属系统（元典 yuandian、北大法宝、威科先行、e签宝、聚法案例等）。
 - **命名 Agent**——端到端工作流 Agent（供应商合同审查、个人信息主体权利响应、劳动合同解除审查、要件分析表构建……），每个 Agent 有独立的职位式名称和单一启动命令。
 
-<p align="center">
-  <img src="docs/assets/capabilities.png" alt="能力展示 — Agent 卡片网格" width="800">
-</p>
 
 ## Agent 列表
 
@@ -230,13 +218,6 @@
 | **社区技能更新** | 检查已安装社区技能的更新 | `legal-builder-hub` | `/legal-builder-hub:auto-updater` |
 | **注册表同步** | 定期检查已关注注册表中的新增和更新技能 | `legal-builder-hub` | scheduled agent |
 
-<p align="center">
-  <img src="docs/assets/lab-1.png" alt="Lab — Agent 工作界面 1" width="250">
-  <img src="docs/assets/lab-2.png" alt="Lab — Agent 工作界面 2" width="250">
-  <img src="docs/assets/lab-3.png" alt="Lab — Agent 工作界面 3" width="250">
-  <img src="docs/assets/lab-4.png" alt="Lab — Agent 工作界面 4" width="250">
-  <img src="docs/assets/lab-5.png" alt="Lab — Agent 工作界面 5" width="250">
-</p>
 
 托管 Agent 部署——`agent.yaml`、leaf-worker 子 Agent、steering 事件示例和各 Agent 安全说明，详见 **[managed-agent-cookbooks/](./managed-agent-cookbooks)**。
 
@@ -292,10 +273,6 @@ scripts/                  # deploy-managed-agent.sh · validate.py · orchestrat
 
 一切皆为 Markdown 和 JSON。无需构建步骤。
 
-<p align="center">
-  <img src="docs/assets/work-1.png" alt="工作成果展示 1" width="400">
-  <img src="docs/assets/work-2.png" alt="工作成果展示 2" width="400">
-</p>
 
 ## 业务领域插件
 
@@ -606,26 +583,11 @@ scripts/                  # deploy-managed-agent.sh · validate.py · orchestrat
 
 依据 [Apache License, Version 2.0](LICENSE) 许可。
 
-<p align="center">
-  <img src="docs/assets/about.png" alt="关于作者 — 着陆页 About 区域" width="800">
-</p>
-
 ## 关于作者
 
 **SH**，本仓库维护者。
 
 本仓库基于 [anthropics/claude-for-legal](https://github.com/anthropics/claude-for-legal) 的中国法适配版本，依据 Apache 2.0 许可证使用。
 
-<p align="center">
-  <img src="docs/assets/testimonial.png" alt="用户评价" width="800">
-</p>
-
 ---
 
-<p align="center">
-  <img src="docs/assets/cta.png" alt="开始使用 Claude for Legal" width="800">
-</p>
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=SH88-source/claude-for-legal-CN&type=Date)](https://www.star-history.com/?repos=SH88-source%2Fclaude-for-legal-CN)
